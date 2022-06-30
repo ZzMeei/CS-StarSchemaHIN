@@ -8,6 +8,8 @@ import index.*;
 
 import java.util.*;
 
+// indexBuildExp : for index space cost analysis
+
 public class IndexTest {
     public static void main(String[] args) {
 //        indexBuildExp();

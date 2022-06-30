@@ -12,6 +12,9 @@ import util.*;
 import java.io.*;
 import java.util.*;
 
+// geneQueryiesSize : generate queries for experiments
+// indexSizeExp : for Semantic richness and Relationships closeness
+
 public class SizeTest {
     public static void main(String[] args) {
 //        geneQueryiesSize();

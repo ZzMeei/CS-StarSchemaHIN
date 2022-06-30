@@ -10,6 +10,10 @@ import util.*;
 
 import java.util.*;
 
+// onlineScalableExp : scalability test for NaiveOnline
+// onlineScalableExpFast : scalability test for FastOnline
+// indexScalableExp : for index construction time analysis
+
 public class ScalableTest {
     public static void main(String[] args) {
 //        onlineScalableExp();

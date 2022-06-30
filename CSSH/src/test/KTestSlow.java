@@ -5,6 +5,8 @@ import util.*;
 
 import java.util.*;
 
+// onlineKExp : NaiveOnline (without Lemma 5 technique, which is as the same as we state in the paper)
+
 public class KTestSlow {
 
     public static void main(String[] args) {

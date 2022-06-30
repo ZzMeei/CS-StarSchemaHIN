@@ -40,6 +40,8 @@ where * means java file name (as well as class name)
 
 The data.zip file in the repository is the corresponding datasets. The Config.java and DataReader.java in CSSH/src/util implementate the function of reading data (edges, vertices and schemas for graphs). 
 
+To read datasets sucessfully, you need to motify the corresponding path string in Config.java.
+
 The original sources of these datasets are stated in our paper.
 
 ### C. Experimentation
@@ -59,7 +61,7 @@ The file path mentioned in the folloing is started with "CSSH/src/test"
 - Online and index-based query algorithms : KTest.java and KTestSlow.java
 - Scalability test : ScalableTest.java
 - Index space cost analysis : IndexTest.java
-- Index construction time analysis : IndexTest.java
+- Index construction time analysis : ScalableTest.java
 
 ## Acknowledgements
 

@@ -10,6 +10,10 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.util.*;
 
+// in order to get valid community, before we make small DBLP dataset, we pre-generate a community text file
+// from the entir DBLP dataset. When small DBLP dataset being generated, we save vertices in this community in
+// the small DBLP dataset to ensure that there will exist valid community.
+
 public class CaseTest {
 
     private int graph[][] = null;
@@ -32,7 +36,7 @@ public class CaseTest {
         HashSet<Integer> cmIdSet = new HashSet<Integer>();
 
         try {
-            BufferedReader stdin = new BufferedReader(new FileReader("./CaseStudyData/community.txt"));
+            BufferedReader stdin = new BufferedReader(new FileReader("./CaseStudyData/community.txt")); // pre-generated community text file
             String line  = null;
             while ((line = stdin.readLine()) != null){
                 cmIdSet.add(Integer.parseInt(line));

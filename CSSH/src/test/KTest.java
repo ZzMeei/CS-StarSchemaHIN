@@ -14,6 +14,11 @@ import util.*;
 import java.io.*;
 import java.util.*;
 
+// indexKExp : IndexQuery
+// onlineKExp : NaiveOnline (with Lemma 5 technique, which is different with we state in the paper)
+// onlineExpFast : FastOnline
+// geneQueriesK : generate queries for experiments
+
 public class KTest {
     public static void main(String[] args) {
         indexKExp();
