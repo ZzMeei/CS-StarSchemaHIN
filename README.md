@@ -20,6 +20,47 @@ The codes of CSSH are implemented and tested under the following development env
 
 We use four real star-schema HINs: PubMed, IMDB, DBLP and Foursquare. The data.zip file in the repository is the corresponding datasets. The detailed statistics and original sources of these datasets are in our paper.
 
+## How to Run the Codes
+
+### A. Code Complilation
+
+The CSSH file folder is an IDEA (IntelliJ IDEA) project file and can be opened and run through IDEA as a Java project (recommended). And it is also right to use jdk tools to complilate the codes in CSSH/src directly.
+
+You can complilate corresponding java main classes in the CSSH/src/test by : 
+
+`javac -d . *.java`
+
+and run class files by :
+
+`java *`
+
+where * means java file name (as well as class name)
+
+### B. Data Generation
+
+The data.zip file in the repository is the corresponding datasets. The Config.java and DataReader.java in CSSH/src/util implementate the function of reading data (edges, vertices and schemas for graphs). 
+
+The original sources of these datasets are stated in our paper.
+
+### C. Experimentation
+
+The file path mentioned in the folloing is started with "CSSH/src/test"
+
+#### Effectiveness evaluation
+
+- Community compactness : DiameterTest.java
+- Similarity of community members : PathSimTest.java
+- Semantic richness : SizeTest.java
+- Relationships closeness : SizeTest.java
+- A case study : CaseTest.java
+
+#### Efficiency evaluation
+
+- Online and index-based query algorithms : KTest.java and KTestSlow.java
+- Scalability test : ScalableTest.java
+- Index space cost analysis : IndexTest.java
+- Index construction time analysis : IndexTest.java
+
 ## Acknowledgements
 
 Chunshan Li was supported by the National Key Research and Development Program of China (No.2018YFB1700400), NSFC under Grant 61902090, and the Major Scientific and Technological
