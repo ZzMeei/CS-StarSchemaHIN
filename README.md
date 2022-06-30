@@ -63,6 +63,17 @@ The file path mentioned in the folloing is started with "CSSH/src/test"
 - Index space cost analysis : IndexTest.java
 - Index construction time analysis : ScalableTest.java
 
+## Drawing
+
+drawing_code includes all python scripts which are used to draw all experiment reslut pictures in the paper.
+
+To run python codes in drawing_code, you need the enviroment with following packages :
+
+- python
+- networkx
+- matplotlib
+- numpy
+
 ## Acknowledgements
 
 Chunshan Li was supported by the National Key Research and Development Program of China (No.2018YFB1700400), NSFC under Grant 61902090, and the Major Scientific and Technological
