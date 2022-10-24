@@ -2,7 +2,9 @@
 
 This repository contains Java codes and datasets for the paper:
 
-> Yangqin Jiang, Yixiang Fang, Chenhao Ma, Xin Cao, and Chunshan Li. “Effective community search over large star-schema heterogeneous information networks”. Proceedings of the VLDB Endowment, 15(7): xxx–xxx, 2022.
+> Yangqin Jiang, Yixiang Fang, Chenhao Ma, Xin Cao, and Chunshan Li. “Effective community search over large star-schema heterogeneous information networks”. Proceedings of the VLDB Endowment, 15(11): 2307 - 2320, 2022. 
+>
+> doi:10.14778/3551793.3551795
 
 ## Introduction
 
