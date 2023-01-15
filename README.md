@@ -65,6 +65,20 @@ The file path mentioned in the folloing is started with "CSSH/src/test"
 - Index space cost analysis : IndexTest.java
 - Index construction time analysis : ScalableTest.java
 
+#### **Detailed Reproducibility Script**
+
+Before the reproducibility, you should download the dataset from the repo and modify file "CSSH/src/util/Config.java" based on the dataset path on your machine.
+
+For section 5.2 Effectiveness Evaluation, you need to run DiameterTest.java to reproduce the result of community compactness; run PathSimTest.java to reproduce the result of similarity of community members; run SizeTest.java to reproduce the result of semantic richness and the result of relationships closeness.
+
+To generate queries for the experiments of Effectiveness Evaluation, you need to run function geneQueryiesSize() in SizeTest.java and you will get four query files with query size equal to 2, 3, 4, 5.
+
+For section 5.3 Efficiency Evaluation, you need to run KTest.java and KTestSlow.java get the efficiency results of two online query algorithms and one indes-based qeury algorithms; run ScalableTest.java to get the result of scalability for two online query algorithms; run IndexTest.java to get the result of index space cost analysis; run ScalableTest.java to get the result of index construction time analysis.
+
+To generate queries for the experiments of Efficiency Evaluation, you need to run function geneQueriesK() in KTest.java and you will get one query files.
+
+Note that for every file in "CSSH/src/test", we have some notes for each function in the file which describes the meaning of this function in brief.
+
 ## Drawing
 
 drawing_code includes all python scripts which are used to draw all experiment reslut pictures in the paper.
@@ -78,12 +92,6 @@ To run python codes in drawing_code, you need the enviroment with following pack
 
 ## Acknowledgements
 
-Chunshan Li was supported by the National Key Research and
-Development Program of China (No.2018YFB1700400), NSFC un-
-der Grant 61902090, and the Major Scientific and Technological
-Innovation Project of Shandong Province of China (2021ZLGX05,
-2020CXGC010705). Yixiang Fang was supported in part by NSFC
-under Grant 62102341, Basic and Applied Basic Research Fund in
-Guangdong Province under Grant 2022A1515010166, and Shenzhen
-Science and Technology Program ZDSYS20211021111415025. Xin
-Cao was supported by ARC DE190100663.
+Chunshan Li was supported by the National Key Research and Development Program of China (No.2018YFB1700400), NSFC under Grant 61902090, and the Major Scientific and Technological
+Innovation Project of Shandong Province of China (2021ZLGX05, 2020CXGC010705). Yixiang Fang was supported in part by NSFC under Grant 62102341, Basic and Applied Basic Research Fund in
+Guangdong Province under Grant 2022A1515010166, and Shenzhen Science and Technology Program ZDSYS20211021111415025. Xin Cao was supported by ARC DE190100663.
