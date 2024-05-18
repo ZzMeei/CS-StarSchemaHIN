@@ -6,6 +6,10 @@ This repository contains Java codes and datasets for the paper:
 >
 > doi:10.14778/3551793.3551795
 
+### Update 2024-05-19
+
+Since there may be some issues about the data.zip file on the github, we also share the data file on google drive: https://drive.google.com/drive/folders/1cCghFJOw5WTHXizzw7wc7giSGg2BxN4S?usp=share_link 
+
 ## Introduction
 
 In this paper, we study the problem of Community Search over Star-schema HINs (or CSSH problem in short), which aims to search the most—likely community containing a set of query vertices Q from a star-schema HIN, without specifying the parameters like meta-paths and relational constraints. To model the community that can well capture the rich semantic relationships carried by query vertices Q, we find the set of vertices under the meta-path-based core model, by maximizing the set of shared meta-paths satisfying the property of non-nestedness. We first develop efficient online query algorithms. We further boost the query efficiency by designing a novel compact index structure and an index-based query algorithm. Our experimental results on four real large star-schema HINs show that the proposed solutions are effective and efficient for searching communities over large HINs.
